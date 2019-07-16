@@ -32,7 +32,7 @@ For more information about `if`, `timeout`, `errorcall`, `errorjump`, `errormess
 
 ## Example
 
-The script below makes robot open G1ANT website in Chrome, maximize the browser window, capture a specified screen area, process it with OCR and assign the resulting content to the `♥document` variable. Using this variable with the indexes of [abbyydocument](https://manual.g1ant.com/link/G1ANT.Addon/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyDocumentStructure.md) structure, the first page of the content is displayed in a dialog box:
+The script below makes robot open G1ANT website in Chrome, maximize the browser window, capture a specified screen area, process it with OCR and assign the resulting content to the `♥document` variable. Using this variable with the indexes of [abbyydocument](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyDocumentStructure.md) structure, the first page of the content is displayed in a dialog box:
 
 ```G1ANT
 chrome g1ant.com

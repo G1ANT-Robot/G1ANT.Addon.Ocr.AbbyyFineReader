@@ -17,21 +17,21 @@ using G1ANT.Language;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.fromscreen", Tooltip = "Command `ocrabbyy.fromscreen` captures part of the screen and recognises text from it")]
+    [Command(Name = "ocrabbyy.fromscreen", Tooltip = "This command captures part of the screen and recognizes text in it")]
     public class OcrAbbyyFromScreenCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Required = true, Tooltip = "Specifies screen area to be captured in format x0⫽y0⫽x1⫽y1 (x0,y0 – coordinates of a top left corner; x1,y1 – coordinates of a right bottom corner of the area)")]
+            [Argument(Required = true, Tooltip = "Screen area to be captured, specified in a rectangle format (`x0⫽y0⫽x1⫽y1`, where `x0⫽y0` are coordinates of a top left corner and `x1⫽y1` coordinates of a bottom right corner of the area)")]
             public RectangleStructure Area { get; set; }
 
-            [Argument(Tooltip = "Runs the command only if condition is true")]
+            [Argument(Tooltip = "When set to `true`, area coordinates are relative to the active window")]
             public BooleanStructure Relative { get; set; } = new BooleanStructure(false);
 
-            [Argument(Tooltip = "The language which should be considered trying to recognize text")]
+            [Argument(Tooltip = "Language which should be considered during text recognition")]
             public TextStructure Language { get; set; } = new TextStructure("English");
 
-            [Argument(DefaultVariable = "result", Tooltip = "Name of variable (of type AbbyyDocument) where command’s result will be stored")]
+            [Argument(DefaultVariable = "result", Tooltip = "Name of a variable where the command's result (recognized text) will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
  

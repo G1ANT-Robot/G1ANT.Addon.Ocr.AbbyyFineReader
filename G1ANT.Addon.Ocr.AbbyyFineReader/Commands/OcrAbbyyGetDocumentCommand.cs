@@ -16,15 +16,15 @@ using System.Threading.Tasks;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.getdocument", Tooltip = "Command `ocrabbyy.getdocument` allows to assign project information to a variable in order to extract different types of data from it")]
+    [Command(Name = "ocrabbyy.getdocument", Tooltip = "This command assigns project information to a variable in order to extract different types of data from it")]
     public class OcrAbbyyGetDocumentCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Tooltip = "Id of a processed document returned by a call to `processfile` command. If not specified, last processed document is used")]
+            [Argument(Tooltip = "ID of a processed document. If not specified, the last processed document is used")]
             public IntegerStructure DocumentID { get; set; } = null;
 
-            [Argument(Tooltip = "Name of variable (of type AbbyyDocument) where command’s result will be stored")]
+            [Argument(Tooltip = "Name of a variable where the command's result (of abbyydocument structure) will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
  

@@ -30,7 +30,7 @@ For more information about `if`, `timeout`, `errorcall`, `errorjump`, `errormess
 
 ## Example
 
-In order to use the `ocrabbyy.readcell` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. In the example below, a sample image file located on user’s Desktop is processed and then the robot reads the content of a cell in row 1, column 2 in table 1 of the OCR-ed document and displays it in a dialog box:
+In order to use the `ocrabbyy.readcell` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. In the example below, a sample image file located on user’s Desktop is processed and then the robot reads the content of a cell in row 1, column 2 in table 1 of the OCR-ed document and displays it in a dialog box:
 
 ```G1ANT
 ocrabbyy.processfile ♥environment⟦USERPROFILE⟧\Desktop\document.jpg

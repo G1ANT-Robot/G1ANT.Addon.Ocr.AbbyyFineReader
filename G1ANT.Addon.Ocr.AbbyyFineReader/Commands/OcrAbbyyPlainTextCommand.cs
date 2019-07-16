@@ -17,18 +17,18 @@ using System.Threading.Tasks;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.plaintext", Tooltip = "Command `ocrabbyyplaintext` allows to extract text from processed document")]
+    [Command(Name = "ocrabbyy.plaintext", Tooltip = "This command extracts text from a processed document")]
     public class OcrAbbyyPlainTextCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Tooltip = "Id of a processed document, if not specified last processed document is used")]
+            [Argument(Tooltip = "ID of a processed document. If not specified, the last processed document is used")]
             public IntegerStructure DocumentID { get; set; } = null;
 
-            [Argument(Tooltip = "Method of text recognition to use, either 'linebyline' or 'structured'. By default, 'structured'")]
+            [Argument(Tooltip = "Method of text recognition to use: `linebyline` or `structured`")]
             public TextStructure Method { get; set; } = new TextStructure("structured");
 
-            [Argument(Tooltip = "Name of variable (of type AbbyyDocument) where command’s result will be stored")]
+            [Argument(Tooltip = "Name of a variable where the command's result will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
  
