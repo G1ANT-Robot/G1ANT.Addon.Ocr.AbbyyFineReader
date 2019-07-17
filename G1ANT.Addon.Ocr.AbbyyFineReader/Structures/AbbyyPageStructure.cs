@@ -1,4 +1,4 @@
-﻿/**
+/**
 *    Copyright(C) G1ANT Ltd, All rights reserved
 *    Solution G1ANT.Addon, Project G1ANT.Addon.Ocr.AbbyyFineReader
 *    www.g1ant.com
@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Structure(Name = "abbyypage" )]
+    [Structure(Name = "abbyypage" , Tooltip = "This structure stores information about a page in a document and has two fields")]
 
     public class AbbyyPageStructure : StructureTyped<CustomPage>
     {

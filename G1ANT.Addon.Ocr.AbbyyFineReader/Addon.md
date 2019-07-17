@@ -24,7 +24,7 @@
 
 | Name | Description |
 | ---- | ----------- |
-| [abbyycell](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyCellStructure.md) |  |
-| [abbyydocument](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyDocumentStructure.md) |  |
-| [abbyypage](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyPageStructure.md) |  |
-| [abbyyrow](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyRowStructure.md) |  |
+| [abbyycell](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyCellStructure.md) | This structure stores information about the location and content of a table cell and has the following fields |
+| [abbyydocument](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyDocumentStructure.md) | This structure stores documents processed with Abbyy FineReader OCR engine and has two fields |
+| [abbyypage](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyPageStructure.md) | This structure stores information about a page in a document and has two fields |
+| [abbyyrow](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Structures/AbbyyRowStructure.md) | This structure stores information about a row on a page and has five fields |
