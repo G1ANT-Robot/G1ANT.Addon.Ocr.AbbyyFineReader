@@ -26,7 +26,7 @@ For more information about `if`, `timeout`, `errorcall`, `errorjump`, `errormess
 
 ## Example
 
-In order to use the `ocrabbyy.exportxml` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. In the example below, text from a sample file located on user’s Desktop is opened and then exported to an XML file:
+In order to use the `ocrabbyy.exportxml` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. In the example below, text from a sample file located on user’s Desktop is opened and then exported to an XML file:
 
 ```G1ANT
 ocrabbyy.processfile ♥environment⟦USERPROFILE⟧\Desktop\document5.jpg

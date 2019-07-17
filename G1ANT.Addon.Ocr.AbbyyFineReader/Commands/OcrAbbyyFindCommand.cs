@@ -25,18 +25,18 @@ using G1ANT.Language;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.find", Tooltip = "Command `ocrabbyy.find` allows to find the text on the active screen and return its position as a 'rectangle' format")]
+    [Command(Name = "ocrabbyy.find", Tooltip = "This command finds a specified text in a given document and returns a list of matches’ positions in a rectangle format")]
     public class OcrAbbyyFindCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Required = true, Tooltip = "Text that you want to find on the screen")]
+            [Argument(Required = true, Tooltip = "Text to be found in a document")]
             public TextStructure Search { get; set; }
 
-            [Argument(Required = false, Tooltip = "Id of a processed document returned by a call to processfile command. If not specified last processed document is used")]
+            [Argument(Required = false, Tooltip = "ID of a processed document. If not specified, the last processed document is used")]
             public IntegerStructure DocumentID { get; set; } = null;
 
-            [Argument(Tooltip = "Name of variable (of type AbbyyDocument) where command’s result will be stored")]
+            [Argument(Tooltip = "Name of a variable where the command's result (a list of rectangle elements) will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
  

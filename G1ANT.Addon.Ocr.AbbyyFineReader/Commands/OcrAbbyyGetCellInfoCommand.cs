@@ -16,21 +16,21 @@ using System.Threading.Tasks;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.getcellinfo", Tooltip = "Command `ocrabbyy.fromscreen` allows to retrive information about table cell")]
+    [Command(Name = "ocrabbyy.getcellinfo", Tooltip = "This command retrieves information about a table cell and returns its coordinates in point format")]
     public class OcrAbbyyGetCellInfoCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Required = false, Tooltip = "Id of a processed document returned by a call to processfile command. If not specified last processed document is used")]
+            [Argument(Required = false, Tooltip = "ID of a processed document. If not specified, the last processed document is used")]
             public IntegerStructure DocumentID { get; set; } = null;
 
-            [Argument(Required = false, Tooltip = "Index of a table in document")]
+            [Argument(Required = false, Tooltip = "Index of a table in a document")]
             public IntegerStructure TableIndex { get; set; } = new IntegerStructure(1);
 
-            [Argument(Required = true, Tooltip = "Position of the cell in the table in format row, column")]
+            [Argument(Required = true, Tooltip = "Position of the cell in the table in `X,Y` format, where `X` means row number and `Y` — column index (number)")]
             public TextStructure Position { get; set; } = null;
 
-            [Argument(Tooltip = "Name of variable (of type AbbyyDocument) where command’s result will be stored")]
+            [Argument(Tooltip = "Name of a variable where the command's result will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
  

@@ -1,4 +1,4 @@
-﻿/**
+/**
 *    Copyright(C) G1ANT Ltd, All rights reserved
 *    Solution G1ANT.Addon, Project G1ANT.Addon.Ocr.AbbyyFineReader
 *    www.g1ant.com
@@ -17,7 +17,7 @@ using G1ANT.Language;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Structure(Name = "abbyydocument")]
+    [Structure(Name = "abbyydocument", Tooltip = "This structure stores documents processed with Abbyy FineReader OCR engine and has two fields")]
     public class AbbyyDocumentStructure : StructureTyped<CustomDocument>
     {
         private const string FirstIndex = "pages";

@@ -12,12 +12,12 @@ using G1ANT.Language;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.close", Tooltip = "Command `ocrabbyy.close` allows to close all documents processed by abbyy engine")]
+    [Command(Name = "ocrabbyy.close", Tooltip = "This command closes all documents processed by ABBYY engine")]
     public class OcrAbbyyCloseCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Tooltip = "Id of a document to be closed, if not specified, G1ANT.Robot closes all documents and unloads abbyy engine")]
+            [Argument(Tooltip = "ID of a document to be closed. If not specified, all documents will be closed and ABBYY engine unloaded")]
             public IntegerStructure Document { get; set; }
         }
         public OcrAbbyyCloseCommand(AbstractScripter scripter) : base(scripter)

@@ -1,4 +1,4 @@
-﻿/**
+/**
 *    Copyright(C) G1ANT Ltd, All rights reserved
 *    Solution G1ANT.Addon, Project G1ANT.Addon.Ocr.AbbyyFineReader
 *    www.g1ant.com
@@ -14,7 +14,7 @@ using System.Text;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Structure(Name = "abbyycell")]
+    [Structure(Name = "abbyycell", Tooltip = "This structure stores information about the location and content of a table cell and has the following fields")]
 
     public class AbbyyCellStructure : StructureTyped<CustomCell>
     {

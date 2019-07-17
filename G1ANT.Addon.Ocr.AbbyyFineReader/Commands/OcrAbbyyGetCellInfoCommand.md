@@ -29,7 +29,7 @@ For more information about `if`, `timeout`, `errorcall`, `errorjump`, `errormess
 
 ## Example
 
-In order to use the `ocrabbyy.getcellinfo` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. This example gets an information about a cell located at the row 1, column 3:
+In order to use the `ocrabbyy.getcellinfo` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. This example gets an information about a cell located at the row 1, column 3:
 
 ```G1ANT
 ocrabbyy.processfile path ♥environment⟦USERPROFILE⟧\Tests\document6.jpg result ♥file1

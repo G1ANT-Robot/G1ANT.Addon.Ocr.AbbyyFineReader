@@ -29,7 +29,7 @@ For more information about `if`, `timeout`, `errorcall`, `errorjump`, `errormess
 
 ## Example
 
-In order to use the `ocrabbyy.gettextparagraphs` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. In the example below, a sample file located on user’s Desktop is processed and then the robot assigns contents of each text paragraph to an element of a resulting list. Finally, this list is displayed in a dialog box:
+In order to use the `ocrabbyy.gettextparagraphs` command, it’s necessary to process the file first with the [`ocrabbyy.processfile`](https://manual.g1ant.com/link/G1ANT.Addon.Ocr.AbbyyFineReader/G1ANT.Addon.Ocr.AbbyyFineReader/Commands/OcrAbbyyProcessFileCommand.md) command. In the example below, a sample file located on user’s Desktop is processed and then the robot assigns contents of each text paragraph to an element of a resulting list. Finally, this list is displayed in a dialog box:
 
 ```G1ANT
 ocrabbyy.processfile ♥environment⟦USERPROFILE⟧\Desktop\document.jpg result ♥fileId
