@@ -14,7 +14,7 @@ This command processes a part of the screen for further data extraction.
 
 | Argument | Type | Required | Default Value | Description |
 | -------- | ---- | -------- | ------------- | ----------- |
-|`area`| [rectangle](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/RectangleStructure.md) | no | (primary screen resolution) | Area of the screen to be processed specified in [rectangle](https://manual.g1ant.com/link/G1ANT.Robot/G1ANT.Language/G1ANT.Language/Structures/RectangleStructure.md) format, eg. `2⫽4⫽12⫽40` |
+|`area`| [rectangle](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/RectangleStructure.md) | no | (primary screen resolution) | Area of the screen to be processed specified in [rectangle](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/RectangleStructure.md) format, eg. `2⫽4⫽12⫽40` |
 |`relative`| [bool](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/BooleanStructure.md) | no | false | If set to true, the area coordinates are relative to the active window |
 |`language`| [text](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/TextStructure.md) | no | English | Language which should be considered during text recognition |
 |`languageweight`| [integer](https://manual.g1ant.com/link/G1ANT.Language/G1ANT.Language/Structures/IntegerStructure.md) | no | 100 | Importance of the chosen language (0-100 range) |
