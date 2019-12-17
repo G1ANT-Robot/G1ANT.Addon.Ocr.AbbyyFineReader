@@ -19,21 +19,21 @@ using G1ANT.Language;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.gettableposition", Tooltip = "Command `ocrabbyy.gettableposition ` allows to find indexes")]
+    [Command(Name = "ocrabbyy.gettableposition", Tooltip = "This command finds text in a specified table of a document and returns a list of indexes")]
     public class OcrAbbyyGetTablePositionCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Required = true, Tooltip = "Text that you want to find in the screen")]
+            [Argument(Required = true, Tooltip = "Text to be found in a table")]
             public TextStructure Search { get; set; }
 
-            [Argument(Required = false, Tooltip = "Id of a processed document, if not specified last processed document is used")]
+            [Argument(Required = false, Tooltip = "ID of a processed document. If not specified, the last processed document is used")]
             public IntegerStructure DocumentID { get; set; } = null;
 
-            [Argument(Required = true, Tooltip = "Index of a table in document")]
+            [Argument(Required = true, Tooltip = "Index of a table in a document")]
             public IntegerStructure TableIndex { get; set; } = null;
 
-            [Argument(Tooltip = "Name of variable (of type AbbyyDocument) where command’s result will be stored")]
+            [Argument(Tooltip = "Name of a variable where the command's result (a list of indexes) will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
             [Argument(DefaultVariable = "timeoutOcr", Tooltip = "Specifies time in milliseconds for G1ANT.Robot to wait for the command to be executed")]

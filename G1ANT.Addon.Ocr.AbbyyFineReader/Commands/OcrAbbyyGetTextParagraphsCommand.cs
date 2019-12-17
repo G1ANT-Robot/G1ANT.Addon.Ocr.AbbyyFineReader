@@ -1,4 +1,4 @@
-﻿/**
+/**
 *    Copyright(C) G1ANT Ltd, All rights reserved
 *    Solution G1ANT.Addon, Project G1ANT.Addon.Ocr.AbbyyFineReader
 *    www.g1ant.com
@@ -25,15 +25,15 @@ using G1ANT.Language;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.gettextparagraphs", Tooltip = "This command extract paragraphs containing text from specified file")]
+    [Command(Name = "ocrabbyy.gettextparagraphs", Tooltip = "This command extracts text paragraphs from a specified file")]
     public class OcrAbbyyGetTextParagraphsCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Required = false, Tooltip = "Id of a processed document returned by a call to processfile command. If not specified last processed document is used.")]
+            [Argument(Required = false, Tooltip = "ID of a processed document. If not specified, the last processed document is used")]
             public IntegerStructure DocumentID { get; set; } = null;
 
-            [Argument]
+            [Argument(Tooltip = "Name of a variable where the command's result (a list of recognized paragraphs) will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
 
  

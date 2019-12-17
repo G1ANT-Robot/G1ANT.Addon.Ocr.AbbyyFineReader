@@ -19,15 +19,15 @@ using System.Text.RegularExpressions;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.readtables", Tooltip = "Command `ocrabbyy.readtables` allows to read the content of all tables existing in a document and process it as a list")]
+    [Command(Name = "ocrabbyy.readtables", Tooltip = "This command reads the content of all tables existing in a document and returns it as a list")]
     public class OcrAbbyyReadTablesCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Required = false, Tooltip = "Id of a processed document returned by a call to \"ocrabbyy.processfile\":{TOPIC-LINK+ocrabby-processfile} command, if not specified, the last processed document is used")]
+            [Argument(Required = false, Tooltip = "ID of a processed document. If not specified, the last processed document is used")]
             public IntegerStructure DocumentID { get; set; } = null;
 
-            [Argument(Tooltip = "Name of a variable (of type AbbyyDocument) where command’s result will be stored")]
+            [Argument(Tooltip = "Name of a variable where the command's result (a list of all tables’ elements) will be stored")]
             public VariableStructure Result { get; set; } = new VariableStructure("result");
         }
         public OcrAbbyyReadTablesCommand(AbstractScripter scripter) : base(scripter)

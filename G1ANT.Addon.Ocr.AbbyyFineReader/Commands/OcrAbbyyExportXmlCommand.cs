@@ -1,4 +1,4 @@
-﻿/**
+/**
 *    Copyright(C) G1ANT Ltd, All rights reserved
 *    Solution G1ANT.Addon, Project G1ANT.Addon.Ocr.AbbyyFineReader
 *    www.g1ant.com
@@ -25,12 +25,12 @@ using G1ANT.Language;
 
 namespace G1ANT.Addon.Ocr.AbbyyFineReader
 {
-    [Command(Name = "ocrabbyy.exportxml", Tooltip = "Exports currently active document to .xml file.")]
+    [Command(Name = "ocrabbyy.exportxml", Tooltip = "This command exports the active document to an .xml file")]
     public class OcrAbbyyExportXmlCommand : Command
     {
         public class Arguments : CommandArguments
         {
-            [Argument(Required = true, Tooltip = "Path to a file to be processed")]
+            [Argument(Required = true, Tooltip = "Path to an exported XML file")]
             public TextStructure Path { get; set; }
             
         }
